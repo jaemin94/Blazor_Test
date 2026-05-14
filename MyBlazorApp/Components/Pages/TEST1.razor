@@ -1,0 +1,18 @@
+@page "/test2"
+
+<h3>테스트 페이지입니다</h3>
+
+<p>Blazor 시작 성공! 이랄까?</p>
+
+<button @onclick="ClickMe">클릭</button>
+
+<p>@message</p>
+
+@code {
+    string message = "";
+
+    void ClickMe()
+    {
+        message = "버튼 클릭됨!";
+    }
+}
